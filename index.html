@@ -136,7 +136,12 @@ header{width:100%;max-width:420px;display:flex;justify-content:space-between;
 <body><div id="splash" style="position:fixed;inset:0;z-index:9999;background:radial-gradient(ellipse at 40% 35%,#7a4e28,#3a1e08 60%,#100500);display:flex;flex-direction:column;align-items:center;justify-content:center;">
 <p style="color:#ede0c4;font-family:Georgia,serif;font-size:48px;font-weight:900;margin-bottom:20px;">El Reloj</p>
 <p style="color:#c89968;font-family:Georgia,serif;font-style:italic;font-size:22px;margin-bottom:30px;">Aprende la hora jugando</p>
-<button onclick="document.getElementById('splash').style.display='none'" style="border:0;padding:16px 52px;border-radius:99px;font-size:22px;font-weight:800;color:#fff5e6;background:#d94a2c;cursor:pointer;">¡Empezar!</button>
+<div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:30px;">
+<span style="color:#ede0c4;background:rgba(255,255,255,0.1);padding:6px 14px;border-radius:99px;border:1px solid rgba(200,153,104,0.4);font-family:Arial,sans-serif;font-size:14px;">Sin anuncios</span>
+<span style="color:#ede0c4;background:rgba(255,255,255,0.1);padding:6px 14px;border-radius:99px;border:1px solid rgba(200,153,104,0.4);font-family:Arial,sans-serif;font-size:14px;">3 modos de juego</span>
+<span style="color:#ede0c4;background:rgba(255,255,255,0.1);padding:6px 14px;border-radius:99px;border:1px solid rgba(200,153,104,0.4);font-family:Arial,sans-serif;font-size:14px;">Numeros romanos</span>
+</div>
+<button onclick="document.getElementById('splash').style.display='none'" style="border:0;padding:16px 52px;border-radius:99px;font-size:22px;font-weight:800;color:#fff5e6;background:#d94a2c;cursor:pointer;">Empezar</button>
 </div>
 
 <header>
@@ -573,7 +578,7 @@ function celebrate(){
   })();}
 }
 
-document.getElementById('pill').style.left='4px';})();
+document.getElementById('pill').style.left='4px';
 })();
 </script>
 </body>
